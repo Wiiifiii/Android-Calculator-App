@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+        <!-- Alignment Switch and Label -->
+        <Switch
+            android:id="@+id/alignSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Align Right" />
+
+        <TextView
+            android:id="@+id/alignLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Default alignment: Left"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Display Area -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:gravity="start|center_vertical"
+        android:maxLines="2"
+        android:scrollHorizontally="false"
+        android:ellipsize="end"
+        android:text=""/>
+
+    <!-- Buttons Table Layout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:paddingTop="16dp">
+
+        <!-- Clear button row -->
+        <TableRow>
+            <Button android:id="@+id/buttonClear" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tyhjennä" android:textSize="18sp" android:background="@android:drawable/btn_default" android:layout_margin="2dp"/>
+        </TableRow>
+
+        <!-- Row 1 -->
+        <TableRow>
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="18sp"
+                android:background="@android:drawable/btn_default"
+                android:layout_margin="2dp"/>
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="8"
+                android:textSize="18sp"
+                android:background="@android:drawable/btn_default"
+                android:layout_margin="2dp"/>
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="9"
+                android:textSize="18sp"
+                android:background="@android:drawable/btn_default"
+                android:layout_margin="2dp"/>
+            <Button
+                android:id="@+id/buttonDivide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="/"
+                android:textSize="18sp"
+                android:background="@android:drawable/btn_default"
+                android:layout_margin="2dp"/>
+        </TableRow>
+
+        <!-- Row 2 -->
+        <TableRow>
+            <Button android:id="@+id/button4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="4" android:textSize="18sp" android:background="@android:drawable/btn_default" android:layout_margin="2dp"/>
+            <Button android:id="@+id/button5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="5" android:textSize="18sp" android:background="@android:drawable/btn_default" android:layout_margin="2dp"/>
+            <Button android:id="@+id/button6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="6" android:textSize="18sp" android:background="@android:drawable/btn_default" android:layout_margin="2dp"/>
+            <Button android:id="@+id/buttonMultiply" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="x" android:textSize="18sp" android:background="@android:drawable/btn_default" android:layout_margin="2dp"/>
+        </TableRow>
+
+        <!-- Row 3 -->
+        <TableRow>
+            <Button android:id="@+id/button1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="1" android:textSize="18sp" android:background="@android:drawable/btn_default" android:layout_margin="2dp"/>
+            <Button android:id="@+id/button2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="2" android:textSize="18sp" android:background="@android:drawable/btn_default" android:layout_margin="2dp"/>
+            <Button android:id="@+id/button3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="3" android:textSize="18sp" android:background="@android:drawable/btn_default" android:layout_margin="2dp"/>
+            <Button android:id="@+id/buttonSubtract" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="-" android:textSize="18sp" android:background="@android:drawable/btn_default" android:layout_margin="2dp"/>
+        </TableRow>
+
+        <!-- Row 4 -->
+        <TableRow>
+            <Button android:id="@+id/buttonDot" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="." android:textSize="18sp" android:background="@android:drawable/btn_default" android:layout_margin="2dp"/>
+            <Button android:id="@+id/button0" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="0" android:textSize="18sp" android:background="@android:drawable/btn_default" android:layout_margin="2dp"/>
+            <Button android:id="@+id/buttonEqual" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="=" android:textSize="18sp" android:background="@android:drawable/btn_default" android:layout_margin="2dp"/>
+            <Button android:id="@+id/buttonAdd" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="+" android:textSize="18sp" android:background="@android:drawable/btn_default" android:layout_margin="2dp"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
