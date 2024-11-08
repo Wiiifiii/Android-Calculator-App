@@ -19,9 +19,6 @@ A simple Android calculator app built in Java, designed to perform basic arithme
 ## Installation
 
 1. Clone the repository:
-  
-   git clone https://github.com/yourusername/Android-Calculator-App.git
-
 2. Open the project in Android Studio.
 3. Build and run the project on an Android emulator or a physical device.
 
